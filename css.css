@@ -1,0 +1,758 @@
+@media (max-width: 640px) {
+    body {
+      margin: 0;
+      font-family: Open Sans, Arial, san-serif;
+      overflow-x: hidden;
+    }
+
+    body::after {
+      content: url(surface_320.jpg);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 99;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+    body {
+      margin: 0;
+      font-family: Open Sans, Arial, san-serif;
+      overflow-x: hidden;
+    }
+
+    body::after {
+      content: url(surface_768.jpg);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 99;
+    }
+}
+
+@media (min-width: 961px) {
+    body {
+      margin: 0;
+      font-family: Open Sans, Arial, san-serif;
+      overflow-x: hidden;
+    }
+
+    body::after {
+      content: url(surface_desktop.jpg);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 99;
+    }
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+}
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans;
+}
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+    display: none;
+}
+
+/*********************Header*********************/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 118vh;
+    background: url(./img/football_767.jpg) no-repeat center/cover #000000;
+}
+.header:after {
+    content: "";
+    background-color: #0a0e34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+.surface-logo {
+    height: 7.5vh;
+    position: relative;
+    z-index: 999;
+    top: 7vh;
+}
+.header h1 {
+    font-size: 6vh;
+    color: white;
+    z-index: 999;
+    text-transform: uppercase;
+}
+.header h1 span {
+    display: block;
+}
+.be-recruited {
+    margin: 33vh 0 0 6.25vw;
+}
+.play-college-sports {
+    margin: 3vh 6.25vw 0 13vw;
+    line-height: 7vh;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17vh;
+}
+.buttons a {
+    border: 0;
+    border-radius: 5vh;
+    background-color: #5e42b0;
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    z-index: 999;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+}
+.buttons a:nth-child(2) {
+    margin-top: 3vh;
+}
+.buttons .button-text {
+    text-align: left;
+    padding-left: 2vw;
+    flex-shrink: 0;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+.logo {
+    height: 4vh;
+    fill: white;
+}
+.shop-name {
+    display: block;
+    font-weight: 700;
+}
+
+/*********************Main*********************/
+
+main {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.motivation {
+    position: relative;
+}
+.motivation h2 {
+    font-size: 3.1rem;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin: 1.5vh 5vw 15rem 7vw;
+}
+.motivation p {
+    line-height: 1.2rem;
+}
+.motivation picture {
+    position: absolute;
+    top: 16vh;
+    left: 52%;
+    transform: translateX(-50%) scale(1);
+}
+.motivation h3 {
+    font-size: 1.5rem;
+    color: #c1c1c1;
+    text-transform: uppercase;
+    margin: 0;
+}
+.motivation article {
+    padding: 14vh 8.5vw 5vh 6.25vw;
+}
+.motivation article:nth-of-type(3n + 1) {
+    background-color: #fafafa;
+}
+.motivation article:nth-of-type(3n + 2) {
+    background-color: #f5f4f9;
+}
+.motivation article:nth-of-type(3n + 3) {
+    background-color: #5e42b0;
+    color: white;
+}
+.motivation:nth-child(2) article:nth-of-type(3n + 3) {
+    background-color: #090c35;
+}
+.motivation article div {
+    display: flex;
+    align-items: center;
+}
+.motivation span {
+    font-size: 0.875rem;
+    color: black;
+    font-weight: 700;
+}
+.motivation:nth-child(2) span {
+    color: #8765dd;
+}
+.motivation span:after {
+    content: "";
+    display: flex;
+    background-color: #5e42b0;
+    width: 1rem;
+    height: 0.25rem;
+    margin: 0.05rem 0.625rem 4px 0;
+}
+.motivation article:nth-of-type(3n + 3) span:after {
+    background-color: white;
+}
+.actions article {
+    display: flex;
+    flex-direction: column;
+}
+.actions aside {
+    position: relative;
+}
+.actions div.be-active {
+    background-image: url(./img/be-active_640.jpg);
+    background-position: 25% 40%;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    min-height: 72vh;
+}
+.actions div.find-contact {
+    background-image: url(./img/find-contact_640.jpg);
+    background-position: 25% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 72vh;
+}
+.actions div.work-it {
+    background-image: url(./img/work-it_640.jpg);
+    background-position: 25% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 72vh;
+}
+.article-number {
+    background-color: #5e42b0;
+    position: absolute;
+    z-index: 9999;
+    height: 4.4rem;
+    width: 4.4rem;
+    left: 1.2rem;
+    top: -3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article-number span {
+    font-size: 0.875rem;
+    color: white;
+    font-weight: 700;
+}
+.article-number span:after {
+    content: "";
+    display: flex;
+    background-color: #8f7bc8;
+    width: 1rem;
+    height: 0.25rem;
+    margin: 0.05rem 0 0 0;
+}
+.actions h4 {
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin: 5vh 0 0 6vw;
+    font-size: 1.9rem;
+}
+.actions p {
+    margin: 2.5vh 9vw 16vh 6.2vw;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: url(./img/game_767.jpg) no-repeat center/cover #000000;
+}
+.footer:after {
+    content: "";
+    background-color: #0a0e34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.95;
+}
+.logo-block {
+    height: 4.5rem;
+    width: 4.5rem;
+    background: linear-gradient(180deg, #6e4fcb, #51389d);
+    border-radius: 3.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    z-index: 999;
+}
+.logo-footer {
+    height: 47px;
+    z-index: 999;
+}
+.string-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    margin: 1.5vh 0 0 0;
+}
+.footer-text {
+    text-align: center;
+}
+.footer h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+    z-index: 999;
+    text-transform: uppercase;
+    margin: 10vh 0 0 0;
+ }
+.footer h1 span {
+    display: block;
+}
+.footer .show-everyone {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    z-index: 999;
+    text-transform: uppercase;
+    margin: 0;
+}
+.footer .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14vh;
+}
+
+.footer .surface-logo {
+    margin-top: 16vh;
+    margin-bottom: 4vh;
+    height: 7.5vh;
+    position: unset;
+    z-index: 999;
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .buttons a {
+        width: 58vh;
+    }
+}
+
+/*********************Resolution 640 - 960px*********************/
+
+@media (min-width: 641px) and (max-width: 960px) {
+    section{
+        width: 100vw;
+    }
+    .header {
+        background: url(./img/football_767.jpg) no-repeat center/cover #000000;
+        height: 93vh;
+    }
+    .header h1 {
+        font-size: 6vh;
+    }
+    .be-recruited {
+        margin: 19.5vh 0 0 11.25vw;
+    }
+    .play-college-sports {
+        margin: 0rem 6.25vw 0 6.5rem;
+        line-height: 4.7rem;
+    }
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 29.5vh;
+        width: 100vw;
+    }
+    .buttons a {
+        flex-basis: 30vh;
+        }
+    .buttons a:nth-child(2) {
+        margin-left: 4vw;
+        margin-top: 0;
+    }
+    .surface-logo {
+        height: 5.4vh;
+        top: 4vh;
+    }
+    .motivation article {
+        padding: 0.9rem 1.25rem 2rem 38vw;
+    }
+    .motivation picture {
+        top: 6rem;
+        left: 10%;
+        transform: translateX(-50%) scale(1);
+    }
+    .motivation:nth-child(2) picture {
+        top: 2rem;
+        right: 0%;
+        left: unset;
+        transform: none;
+    }
+    .motivation h2 {
+        font-size: 4.9rem;
+        margin: 7.5vw 5vw 1rem 38vw;
+    }
+    .motivation h3 {
+        font-size: 2rem;
+    }
+    .motivation span {
+        font-size: 1.2rem;
+    }
+    .motivation span:after {
+        width: 1.3rem;
+    }
+    .motivation p {
+        line-height: 1.8rem;
+    }
+    .motivation:nth-child(2) h2 {
+        margin: 6vw 5vw 1rem 4vw;
+    }
+    .motivation:nth-child(2) article {
+        padding: 1rem 23rem 2rem 4vw;
+    }
+    .motivation:nth-child(2) article:nth-of-type(3n + 3) {
+        background-color: #090c35;
+    }
+    .actions div.be-active {
+        background-image: url(./img/be-active_960.jpg);
+        background-position: 73% 3%;
+        background-size: cover ;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-width: 100%;
+        min-height: 75vw;
+    }
+    .actions div.find-contact {
+        background-image: url(./img/find-contact_960.jpg);
+        background-position: 100% 0%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-width: 100%;
+        min-height: 75vw;
+    }
+    .actions div.work-it {
+        background-image: url(./img/work-it_960.jpg);
+        background-position: 60% 10%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-width: 100%;
+        min-height: 75vw;
+    }
+    .article-number {
+        height: 7.2rem;
+        width: 7.2rem;
+        left: 2.1rem;
+        top: -5rem;
+    }
+    .article-number span {
+        font-size: 1.5rem;
+    }
+    .article-number span:after {
+        width: 1.7rem;
+    }
+    .actions h4 {
+        margin: 6.5vh 0 0 3.7vw;
+        font-size: 4.9rem;
+    }
+    .actions p {
+        margin: 0.6rem 5rem 6.5rem 1.9rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+    .logo-footer {
+        height: 88px;
+    }
+    .logo-block {
+        height: 8rem;
+        width: 8rem;
+        margin-top: 9.2rem;
+    }
+    .footer {
+        background: url(./img/game_1280.jpg) no-repeat center/cover #000000;
+    }
+    .footer h1 {
+        font-size: 5.2rem;
+        margin: 3.8rem 0 0 0;
+        z-index: 9999;
+    }
+    .footer .show-everyone {
+        font-size: 2.1rem;
+        font-weight: 400;
+        color: white;
+        z-index: 9999;
+        text-transform: uppercase;
+        margin: -0.5rem 0 0 0;
+    }
+    .footer .buttons {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 27vh;
+    }
+    .footer .surface-logo {
+        margin-top: 5.5vh;
+        margin-bottom: 4vh;
+        height: 5.5vh;
+    }
+    .string-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 9999;
+        margin: -1rem 0 0 0;
+    }
+    .footer-text {
+        text-align: center;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px) and (orientation: landscape) {
+    .buttons {
+        margin-top: 15vh;
+    }
+    .motivation:nth-child(2) picture {
+        right: -6%;
+    }
+}
+
+/*********************Resolution 961 - 1920px*********************/
+
+@media (min-width: 961px) {
+    .header {
+        background: url(./img/football_1280.jpg) no-repeat center/cover #000000;
+        height: 94vh;
+    }
+    .header h1 {
+        font-size: 8.5vh;
+    }
+    .be-recruited {
+        margin: 16vw 0 0 10vw;
+    }
+    .play-college-sports {
+        margin: 0 0 0 23vw;
+        line-height: 8vh;
+    }
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 11.5vw;
+    }
+    .buttons a {
+        flex-basis: 31vh;
+        width: 31vh;
+        }
+    .buttons a:nth-child(2) {
+        margin-left: 2vw;
+        margin-top: 0;
+    }
+    .surface-logo {
+        height: 5vh;
+        top: 4.5vh;
+    }
+    .motivation article {
+        padding: 6.5vh 12vw 3.5vh 52.5vw;
+    }
+    .motivation picture {
+        top: 1rem;
+        margin-left: -38rem;
+        transform: none;
+    }
+    .motivation h2 {
+        font-size: 4.9rem;
+        margin: 8.5vh 5vw 1vh 52.5vw;
+    }
+    .motivation h3 {
+        font-size: 2.1rem;
+    }
+    .motivation span {
+        font-size: 1.3rem;
+    }
+    .motivation span:after {
+        width: 1.5rem;
+    }
+    .motivation p {
+        line-height: 1.7rem;
+        font-size: 1.3rem;
+        margin: 1.5rem 0 0 0;
+    }
+    .motivation:nth-child(2) picture {
+        top: 1rem;
+        right: 13vh;
+        left: unset;
+        transform: none;
+        width: 51%;
+    }
+    .motivation:nth-child(2) h2 {
+        margin: 9vh 5vw 2vh 9.5vw;
+    }
+    .motivation:nth-child(2) article {
+        padding: 5.5vh 51vw 5.5vh 10vw;
+    }
+    .motivation:nth-child(2) article:nth-of-type(3n + 3) {
+        background-color: #090c35;
+    }
+    .actions aside {
+        max-width: 50%;
+    }
+    .actions article {
+        display: flex;
+        flex-direction: row;
+    }
+    .actions div.be-active {
+        background-image: url(./img/be-active_1024.jpg);
+        background-position: 73% 3%;
+        background-size: cover ;
+        background-repeat: no-repeat;
+        width: 50%;
+        min-width: 50%;
+        min-height: 38vw;
+    }
+    .actions div.find-contact {
+        background-image: url(./img/find-contact_1024.jpg);
+        background-position: 100% 0%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50%;
+        min-width: 50%;
+        min-height: 38vw;
+        order: 2;
+    }
+    .actions div.work-it {
+        background-image: url(./img/work-it_1024.jpg);
+        background-position: 60% 10%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50%;
+        min-width: 50%;
+        min-height: 38vw;
+    }
+    .article-number {
+        height: 9vw;
+        width: 9vw;
+        left: 0%;
+        transform: translateX(-50%);
+        top: 19vh;
+    }
+    .actions article:nth-child(2) .article-number {
+        height: 9vw;
+        width: 9vw;
+        left: 100%;
+        transform: translateX(-50%);
+        top: 19vh;
+    }
+    .article-number span {
+        font-size: 1.5rem;
+    }
+    .article-number span:after {
+        width: 1.7rem;
+    }
+    .actions h4 {
+        margin: 23vh 0 0 12vh;
+        font-size: 4.2vw;
+    }
+    .actions article:nth-child(2) h4 {
+        margin: 22.5vh 0 0 9.7vw;
+    }
+    .actions p {
+        margin: 5vw 10vw 11.5vw 12.5vh;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+    .actions article:nth-child(2) p {
+        margin: 2.5vw 6vw 15.5vw 9.9vw;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+    .logo-footer {
+        height: 88px;
+    }
+    .logo-block {
+        height: 8rem;
+        width: 8rem;
+        margin: 0;
+    }
+    .footer h1 {
+        font-size: 5.2rem;
+        margin: 0 0 0 0;
+    }
+    .footer .show-everyone {
+        font-size: 2.1rem;
+        font-weight: 400;
+        color: white;
+        z-index: 999;
+        text-transform: uppercase;
+        margin: -0.5rem 0 0 0;
+    }
+    .footer .buttons {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 14vh;
+    }
+    .footer .surface-logo {
+        margin-top: 16rem;
+        margin-bottom: 4rem;
+        height: 56px;
+    }
+    .string-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 999;
+        margin: 19vh 0 0 0;
+    }
+    .footer-text {
+        margin-left: 2rem;
+    }
+}
+
+/*********************Resolution over 1921px*********************/
+
+@media (min-width: 1921px) {
+    .header {
+        background: url(./img/football_1920.jpg) no-repeat center/cover #000000;
+    }
+}
